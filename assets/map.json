@@ -1,0 +1,39 @@
+{ "height":8,
+ "layers":[
+        {
+         "data":[1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 2, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 2, 1, 2, 2, 1, 2, 1, 1, 2, 1, 2, 2, 2, 1, 1, 1, 1, 2, 2, 1, 1, 1, 2, 1, 1, 1, 2, 2, 1, 1, 2, 2, 2, 2, 1, 2, 1, 1, 1, 1, 1, 2, 1],
+         "height":8,
+         "name":"Calque de Tile 1",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":8,
+         "x":0,
+         "y":0
+        }],
+ "orientation":"isometric",
+ "properties":
+    {
+
+    },
+ "tileheight":64,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "image":"tileset.png",
+         "imageheight":128,
+         "imagewidth":256,
+         "margin":0,
+         "name":"tileset",
+         "properties":
+            {
+
+            },
+         "spacing":0,
+         "tileheight":64,
+         "tilewidth":128
+        }],
+ "tilewidth":128,
+ "version":1,
+ "width":8
+}
