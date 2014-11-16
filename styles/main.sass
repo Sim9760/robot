@@ -1,0 +1,57 @@
+@import engine.sass
+
+
+$black: #111
+$white: #fff
+
+$blue: #17a1a5
+$orange: #e34c00
+
+
+*
+  +box-sizing(border-box)
+
+html, body
+  +normalize()
+  +font-family(Arial)
+
+#loader
+  +transition(1000ms)
+  +background-size(cover)
+  +full-size()
+
+  background: url(../assets/splash.jpeg) no-repeat center center fixed
+
+  position: absolute
+  top: 0
+  left: 0
+
+#status
+  background-color: $blue
+
+  bottom: 100px
+
+  &.warning
+    background-color: $orange
+
+pre
+  +normalize()
+  +font-family(Menlo)
+
+  height: 100px
+  background: $black
+
+  overflow: auto
+  bottom: 0
+
+  b
+    color: $orange
+
+#status, pre
+  position: absolute
+  width: 100%
+
+  padding: 5px 10px
+
+  color: $white
+  font-size: 14px

@@ -1,0 +1,44 @@
+pipeline 'scripts', 'www/scripts' do
+  match '*.js'
+end
+
+pipeline 'styles', 'www/styles' do
+  parallel do
+    run do
+      match '*.scss', '*.sass'
+
+      sass
+    end
+
+    run do
+      match '*.css'
+    end
+  end
+end
+
+pipeline 'assets', 'www/assets' do
+  parallel do
+    run do
+      match '*.psd'
+
+      psd
+    end
+
+    run do
+      match '*.png', '*.jpeg'
+    end
+  end
+
+end
+
+pipeline 'views', '.' do
+  match 'index.jade'
+
+  jade
+end
+
+pipeline 'views', 'www/views' do
+  match '*.jade'
+
+  jade
+end

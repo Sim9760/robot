@@ -1,0 +1,22 @@
+{
+  "name": "robot",
+  "version": "0.1.0",
+  "description": "Robot",
+  "license": "MIT",
+  "author": {
+    "name": "Simon Liétar",
+    "email": "simon@lietar.net",
+    "url": "http://simon.lietar.net"
+  },
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "http://git.lietar.net/slietar/robot.git"
+  },
+  "scripts": {
+    "run": "./piperun watch & python -m SimpleHTTPServer"
+  },
+  "dependencies": {
+    "eagle": "git+ssh://git@git.lietar.net:slietar/robot.git#b9f20a4"
+  }
+}
